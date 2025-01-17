@@ -24,7 +24,7 @@ const WeatherApp = () => {
   },[currentCity])
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-br from-blue-400 to-blue-600 flex flex-col items-center justify-center gap-2 p-4">
       <div className="bg-white bg-opacity-20 backdrop-blur-lg rounded-3xl p-8 max-w-sm w-full">
         <CitySearch onCityChange={(city) => setCurrentCity(city)} />
         <div className="flex justify-between items-center mb-6">
@@ -88,6 +88,9 @@ const WeatherApp = () => {
           </div>
         </div>
       </div>
+      <h3 className="text-md font-bold text-blue-800 mb-4">
+        Desenvolvidor por <a className="underline" href="https://augusto-alves.vercel.app" target="_blank" rel="noopener noreferrer">Augusto Alves</a>
+      </h3>
     </div>
   );
 };
